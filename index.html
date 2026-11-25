@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>The Last Light</title>
+  <meta name="description" content="Fragrance from the edge of the world.">
+  <meta name="theme-color" content="#020406">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23040709'/><rect x='14.5' y='7' width='3' height='18' fill='%23e9c48d'/></svg>">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <canvas id="gl" aria-label="A lighthouse in a storm. Use the mouse, touch, or W and S with the arrow keys to explore."></canvas>
+  <div id="veil"></div>
+
+  <div id="title"><h1>The Last Light</h1><p>Fragrance from the edge of the world.</p></div>
+  <p id="line"></p>
+  <div id="reveal"></div>
+  <div id="spots"></div>
+  <section id="product" aria-label="Fragrance"></section>
+
+  <div id="top">
+    <button id="mark" type="button">The Last Light</button>
+    <div><button id="collection" type="button">Fragrances</button><button id="cart" type="button">Collection <span id="count">0</span></button></div>
+  </div>
+  <nav id="gauge" aria-label="Places"></nav>
+  <p id="chapter"></p>
+  <p id="hint"></p>
+  <button id="sound" type="button" aria-pressed="false"><i></i><span>Sound off</span></button>
+
+  <div id="scrim"></div>
+  <aside id="drawer" role="dialog" aria-label="Your collection"></aside>
+  <div id="cursor" aria-hidden="true"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="15"/><circle class="p" cx="20" cy="20" r="15" pathLength="1"/></svg><i></i></div>
+  <div id="live" aria-live="polite"></div>
+  <noscript>The Last Light is a place rendered in WebGL and needs JavaScript.</noscript>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
